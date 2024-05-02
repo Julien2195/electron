@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/photon.css">
+    <title>Electro news</title>
+    <style>
+        .container-ul {
+            display: flex;
+            border-bottom: 1px solid rgb(193, 181, 181);
+        }
+
+        .container-header {
+            display: flex;
+            flex-direction: end;
+            width: 100%;
+        }
+
+        .container-infos {
+            width: 100%;
+        }
+
+        .search {
+            width: 100%;
+        }
+
+        .img-container {
+            width: 75px;
+            height: 100%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .custom-title {
+            text-decoration: underline;
+        }
+
+        .custom-title p {
+            color: blue !important;
+            font-weight: bold;
+        }
+
+        .container-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .custom-publish-at {
+            color: #000;
+        }
+
+        .custom-description {
+            margin-top: 15px;
+        }
+
+        .container-date-publisher {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        p {
+            text-decoration: none !important;
+            color: #000 !important;
+
+        }
+
+        h3,
+        p {
+            margin: 0 !important;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .custom-search {
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="window">
+        <main>
+            <div class="container-header">
+                <nav class="nav-group">
+                    <h5 class="nav-group-title">Categories</h5>
+                    <span class="nav-group-item">
+                        <span class="icon icon-network" id="business"></span>
+                        Business
+                    </span>
+                    <span class="nav-group-item">
+                        <span class="icon icon-briefcase" id="sports"></span>
+                        Sports
+                    </span>
+                    <span class="nav-group-item">
+                        <span class="icon icon-users" id="health"></span>
+                        Politics
+                    </span>
+                    <span class="nav-group-item">
+                        <span class="icon icon-monitor" id="technology"></span>
+                        Technology
+                    </span>
+                    <span class="nav-group-item">
+                        <span class="icon icon-music" id="entertainment"></span>
+                        Entertainment
+                    </span>
+                    <span class="nav-group-item">
+                        <span class="icon icon-plus-squared" id="health"></span>
+                        Health
+                    </span>
+                </nav>
+                <div class="custom-search">
+                    <div class="search">
+                        <input class="form-control" type="text" placeholder="Search for news" id="search">
+                    </div>
+
+                    <div id="container-main"></div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <script src="callApi.js"></script>
+</body>
+
+</html>

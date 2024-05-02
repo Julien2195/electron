@@ -1,0 +1,17 @@
+{
+  "name": "exo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^5.0.2",
+    "electron-fetch": "^1.9.1",
+    "newsapi": "^2.4.1"
+  }
+}
